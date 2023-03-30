@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Huddle landing page with single introductory section challenge](https://darmau591.github.io/landing_section/)
-- Live Site URL: [Github Page](https://darmau591.github.io/)
+- Live Site URL: [Github Page](https://github.com/darmau591/landing_section)
 
 ## My process
 
