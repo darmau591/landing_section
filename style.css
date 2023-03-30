@@ -1,0 +1,104 @@
+:root{
+  --neutral-color: hsl(0, 0%, 100%);
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+}
+
+*{
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+}
+body{
+  background-color: var(--primary-color);
+  background-image: url(./images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+}
+
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+nav{
+  padding: 2rem 0;
+}
+.logo{
+  width: 200px;
+}
+
+.hero_banner{
+  padding: 2rem 0;
+  color: var(--neutral-color);
+}
+
+.row{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+.image_banner{
+  height: fit-content;
+  width:46%;
+  flex-grow: 1;
+}
+.col{
+  width: 50%;
+  flex-grow: 1;
+
+}
+h1{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  padding: 1.5rem 0;
+}
+p{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.button{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-color: var(--neutral-color);
+  border-radius: 2rem;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  transition: color,background-color, box-shadow  0.3s ease-in-out;
+}
+
+.button:hover{
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  box-shadow: 0px 5px 14px hsl(257, 40%, 29%);
+}
+
+.social_feed{
+  text-align: right;
+}
+i{
+  border: 1px solid white;
+  border-radius: 50% 50%;
+  padding: 0.5rem;
+  color: white;
+  margin: 0.3rem;
+}
+
+i:hover{
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+@media screen  and (max-width:727px) {
+  body{
+    background-image: url(./images/bg-mobile.svg);
+  }
+}
